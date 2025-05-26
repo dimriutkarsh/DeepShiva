@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <h1>AI Voice Assistant</h1>
+            </div>
+            <div class="header-controls">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                    🌞
+                </button>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Ready</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Hello! I'm DeepShiva, your AI assistant. How can I help you today?
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        placeholder="Type your message here..."
+                        autocomplete="off"
+                    >
+                    <div class="action-buttons">
+                        <label for="file-input" class="action-button" title="Upload image">
+                            <span class="button-icon">📷</span>
+                        </label>
+                        <input 
+                            type="file" 
+                            id="file-input" 
+                            accept="image/*" 
+                            style="display: none;"
+                        >
+                        <button 
+                            class="action-button" 
+                            id="mic-button"
+                            title="Voice input"
+                        >
+                            <span class="button-icon">🎤</span>
+                        </button>
+                        <button 
+                            class="action-button send-button" 
+                            id="send-button"
+                            title="Send message"
+                        >
+                            <span class="button-icon">➤</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="marquee">
+            <div class="marquee-content">
+                Created By Utkarsh Dimri • Powered by Advanced AI Technology • Voice Recognition Enabled • Image Processing Capable • Dark Mode Support
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
